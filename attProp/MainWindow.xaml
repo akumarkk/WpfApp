@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:attProp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="Test App" Height="600" Width="800">
     <DockPanel>
         <TextBlock DockPanel.Dock="Left" Width="40" Background="Coral">Left</TextBlock>
         <TextBlock DockPanel.Dock="Top" Background="CadetBlue">Top</TextBlock>
