@@ -24,5 +24,10 @@ namespace UCAppl
         {
             InitializeComponent();
         }
+
+        private void UserOperationsUC_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
