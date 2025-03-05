@@ -5,30 +5,30 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UCAppl.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="60" d:DesignWidth="550">
+             d:DesignHeight="60" d:DesignWidth="750">
     <Grid>
         <StackPanel Orientation="Horizontal">
             <TextBlock>Yash!</TextBlock>
             <Image Name="Heart"
                    Margin="8"
-                   Source="/Icons/nolike.png"
+                   Source="C:\Users\anikris\WpfApp\CC\UCAppl\UCAppl\Icons\nolike.png"
                    Stretch="Uniform"
                    MouseDown="Heart_MouseDown"/>
             <Image Name="comment"
                    Margin="8"
-                   Source="/Icons/comment.png"
+                   Source="C:\Users\anikris\WpfApp\CC\UCAppl\UCAppl\Icons\comment.png"
                    Stretch="Uniform"
                    
                    />
             <Image Name="send"
                    Margin="8"
-                   Source="/Icons/send.png"
+                   Source="C:\Users\anikris\WpfApp\CC\UCAppl\UCAppl\Icons\send.png"
                    Stretch="Uniform"
                    
                    />
             <Image Name="bookmark"
                    Margin="8"
-                   Source="/Icons/bookmark.png"
+                   Source="C:\Users\anikris\WpfApp\CC\UCAppl\UCAppl\Icons\bookmark.png"
                    Stretch="Uniform"
                    
                    HorizontalAlignment="Right"/>
