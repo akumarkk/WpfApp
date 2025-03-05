@@ -12,7 +12,6 @@
         <!--xmlns="clr-namespace:UCAppl.UserControls"-->
         <uc:UserAppControl >
         </uc:UserAppControl>
-      
         <uc:UserOperationsUC Height="50">
         </uc:UserOperationsUC>
         <local:UserOperationsUC Height="50" Loaded="UserOperationsUC_Loaded">
