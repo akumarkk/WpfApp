@@ -9,7 +9,7 @@
     <Grid>
 
         <Border Background="BurlyWood" Height="100" Width="200">
-            <TextBlock Padding="20" FontWeight="Bold">Welcome to Y User control!</TextBlock>
+            <TextBlock Padding="20" FontWeight="Bold">Welcome to User control!</TextBlock>
         </Border>
 
     </Grid>
