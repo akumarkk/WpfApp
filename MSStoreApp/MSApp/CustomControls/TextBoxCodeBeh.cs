@@ -61,7 +61,7 @@ namespace MSApp.CustomControls
             
             box.TextChanged += MyTextBox_TextChanged;
 
-            base.Content = _panel; // Use base.Content to set the content of the UserControl.
+            base.Content = _panel;.
         }
 
         private void MyTextBox_TextChanged(object sender, TextChangedEventArgs e)
