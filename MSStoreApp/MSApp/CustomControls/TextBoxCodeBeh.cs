@@ -71,7 +71,6 @@ namespace MSApp.CustomControls
             starBox.Text = "Your start rating value = " + textBox.Text;
             starBox.Foreground = Brushes.Aqua;
             starBox.Background = Brushes.LightCoral;
-
         }
 
         private static void OnStarCountChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -85,7 +84,6 @@ namespace MSApp.CustomControls
 
         private void UpdateRatingVisual(int value)
         {
-
             starBox.Text = "Your start rating value = " + value;
             starBox.Background = Brushes.Bisque;
         }
