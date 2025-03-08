@@ -11,9 +11,7 @@
                         <Line x:Name="PART_Second" Stroke="Red" StrokeThickness="1" X1="0" X2="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
                         <Ellipse x:Name="PART_Border" Stroke="Black" StrokeThickness="1" Width="220" Height="220"/>
-
                     </Grid >
-                    
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
