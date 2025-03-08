@@ -5,12 +5,34 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="local:AnalogClock">
-                    <Grid >
-                        <Line x:Name="PART_Minute" Stroke="Black" StrokeThickness="1" X1="0" X2="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <Line x:Name="PART_Hour" Stroke="Black" StrokeThickness="1" X1="0" X2="75" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <Line x:Name="PART_Second" Stroke="Red" StrokeThickness="1" X1="0" X2="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Grid RenderTransformOrigin="0.5 0.5" >
+                        <Grid.RenderTransform>
+                            <RotateTransform Angle="90"/>
+                        </Grid.RenderTransform>
+                        <Line x:Name="PART_Hour" Stroke="Black" StrokeThickness="1" X1="0" X2="-75"  VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <!--<Line.RenderTransform>
+                                --><!--<RotateTransform Angle="30" />-->
+                                <!--CenterX="0" CenterY="0"-->
+                                <!--Y1="0" Y2="0"--><!--
+                            </Line.RenderTransform>-->
+                            <!--<Line.RenderTransformOrigin>0.5, 0.5</Line.RenderTransformOrigin>-->
+                        </Line>
+                        <Line x:Name="PART_Minute" Stroke="Blue" StrokeThickness="1" X1="0" X2="-100" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <!--<Line.RenderTransform>
+                                <RotateTransform Angle="45" />
 
-                        <Ellipse x:Name="PART_Border" Stroke="Black" StrokeThickness="1" Width="220" Height="220"/>
+                            </Line.RenderTransform>-->
+                            <!--<Line.RenderTransformOrigin>0.5, 0.5</Line.RenderTransformOrigin>-->
+                        </Line>
+
+                        <Line x:Name="PART_Second" Stroke="Red" StrokeThickness="1" X1="0" X2="-100" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <!--<Line.RenderTransform>
+                                <RotateTransform Angle="90" />
+                            </Line.RenderTransform>-->
+                            <!--<Line.RenderTransformOrigin>0.5, 0.5</Line.RenderTransformOrigin>-->
+                        </Line>
+
+                                <Ellipse x:Name="PART_Border" Stroke="Black" StrokeThickness="1" Width="210" Height="210"/>
                     </Grid >
                 </ControlTemplate>
             </Setter.Value>
