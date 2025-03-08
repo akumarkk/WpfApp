@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSApp"
         xmlns:uc ="clr-namespace:MSApp.UserControl"
+        xmlns:cc ="clr-namespace:MSApp.CustomControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <uc:MSApp>
-        </uc:MSApp>
+        <cc:TextBoxCodeBeh Rating="9" RatingChanged="TextBoxCodeBeh_RatingChanged"></cc:TextBoxCodeBeh>
+        <!--<uc:MSApp></uc:MSApp>-->
 
     </Grid>
 </Window>

@@ -12,6 +12,28 @@ using System.Windows.Media;
 
 namespace MSApp.CustomControls
 {
+    public class RatingChangedEventArgs : EventArgs
+    {
+        public int OldVal, NewVal;
+        public RatingChangedEventArgs(int oldVal, int newVal)
+        {
+            OldVal = oldVal;
+            NewVal = newVal;
+        }
+    }
+
+
+
+    public class RatingChangesEventArg: EventArgs
+    {
+        public int OldVal, NewVal;
+        public RatingChangesEventArg(int oldVal, int newValue)
+        {
+            OldVal = oldVal;
+            NewVal = newValue;
+        }
+    }
+    
     public class TextBoxCodeBeh: System.Windows.Controls.UserControl
     {
         TextBlock _label, starBox;
@@ -35,6 +57,8 @@ namespace MSApp.CustomControls
             DependencyProperty.Register("Rating", typeof(int), typeof(TextBoxCodeBeh),
                 new PropertyMetadata(0, OnStarCountChanged));
 
+        // Define the event
+        public event EventHandler<RatingChangesEventArg> RatingChanged;
         public TextBoxCodeBeh()
         {
             
@@ -61,7 +85,7 @@ namespace MSApp.CustomControls
             
             box.TextChanged += MyTextBox_TextChanged;
 
-            base.Content = _panel;.
+            base.Content = _panel;
         }
 
         private void MyTextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -71,6 +95,8 @@ namespace MSApp.CustomControls
             starBox.Text = "Your start rating value = " + textBox.Text;
             starBox.Foreground = Brushes.Aqua;
             starBox.Background = Brushes.LightCoral;
+
+            Rating = int.Parse( textBox.Text);
         }
 
         private static void OnStarCountChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -78,7 +104,11 @@ namespace MSApp.CustomControls
             var control = (TextBoxCodeBeh)d;
             int newValue = (int)e.NewValue;
             int oldValue = (int)e.OldValue;
-            control.UpdateRatingVisual(newValue);
+            //control.UpdateRatingVisual(newValue);
+
+             
+            var r = new RatingChangesEventArg(oldValue, newValue);
+            control?.RatingChanged.Invoke(control, r);
 
         }
 
