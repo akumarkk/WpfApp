@@ -39,7 +39,6 @@ namespace MSApp.CustomControls
             _panel.Children.Add(_textBox);
             _textBox.Text = "Hello from masterpiece!";
 
-            // Corrected Line:
             base.Content = _panel; // Use base.Content to set the content of the UserControl.
 
             
