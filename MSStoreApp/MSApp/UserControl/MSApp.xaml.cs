@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,18 @@ namespace MSApp.UserControl
     /// </summary>
     public partial class MSApp : System.Windows.Controls.UserControl
     {
+        Random random = new();
         public MSApp()
         {
             InitializeComponent();
+            var files = Directory.GetFiles(Environment.CurrentDirectory + @"/../../../Images");
+            int rnd = random.Next(files.Length);
+            var image = new BitmapImage(new Uri(files[rnd]));
+            ProductImage.Source = image;
+
+            AppNameText.Text = files[rnd].Split("//").Last().Split('-').Last().Split('.').First();
+
+
         }
 
         private void ProductImage_MouseUp(object sender, MouseButtonEventArgs e)
