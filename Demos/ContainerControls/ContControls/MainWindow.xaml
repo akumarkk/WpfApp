@@ -7,24 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <GroupBox Background="Aqua" Height="78">
-            <GroupBox.Header>
-                <Label Content="Smiley Colors: " />
+        <GroupBox Background="Aqua" Height="78" BorderThickness="0" Margin="0 0 0 0" Padding="0 0 0 0">
+            <GroupBox.Header >
+                <Label Content="Smiley Colors: " Height="38"/>
             </GroupBox.Header>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Height="40">
                 <RadioButton Content="Blue"/>
                 <RadioButton Content="Green" />
                 <RadioButton Content="Peach" />
             </StackPanel>
         </GroupBox>
 
-        <Expander Background="Silver" Height="78">
+        <Expander Background="Silver" Height="60">
             <Expander.Header>
                 <Label Content="Smiley Colors(Expand(default)/Collapse): " />
             </Expander.Header>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Margin="1,1,1,1">
                 <RadioButton Content="Blue"/>
-                <RadioButton Content="Green" />
+                <RadioButton Content="Green" Padding="2" />
                 <RadioButton Content="Peach" />
             </StackPanel>
         </Expander>
