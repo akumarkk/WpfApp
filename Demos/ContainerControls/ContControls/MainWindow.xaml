@@ -41,5 +41,7 @@
             </TabItem>
 
         </TabControl>
+        <cc:ToolBarUC>
+        </cc:ToolBarUC>
     </StackPanel>
 </Window>
