@@ -1,0 +1,32 @@
+﻿<Window x:Class="ContControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <GroupBox Background="Aqua" Height="78">
+            <GroupBox.Header>
+                <Label Content="Smiley Colors: " />
+            </GroupBox.Header>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Content="Blue"/>
+                <RadioButton Content="Green" />
+                <RadioButton Content="Peach" />
+            </StackPanel>
+        </GroupBox>
+
+        <Expander Background="Silver" Height="78">
+            <Expander.Header>
+                <Label Content="Smiley Colors(Expand/Collapse): " />
+            </Expander.Header>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Content="Blue"/>
+                <RadioButton Content="Green" />
+                <RadioButton Content="Peach" />
+            </StackPanel>
+        </Expander>
+    </StackPanel>
+</Window>
