@@ -20,7 +20,7 @@
 
         <Expander Background="Silver" Height="78">
             <Expander.Header>
-                <Label Content="Smiley Colors(Expand/Collapse): " />
+                <Label Content="Smiley Colors(Expand(default)/Collapse): " />
             </Expander.Header>
             <StackPanel Orientation="Horizontal">
                 <RadioButton Content="Blue"/>
