@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:cc="clr-namespace:ContControls.CustomControls">
     <StackPanel>
         <GroupBox Background="Aqua" Height="78" BorderThickness="0" Margin="0 0 0 0" Padding="0 0 0 0">
             <GroupBox.Header >
@@ -28,5 +29,17 @@
                 <RadioButton Content="Peach" />
             </StackPanel>
         </Expander>
+
+        <TabControl>
+            <TabItem Header="GroupBox">
+                <cc:GroupBoxCC>
+                </cc:GroupBoxCC>
+            </TabItem>
+            <TabItem Header="ExpanderBox">
+                <cc:ExpanderBoxCC>
+                </cc:ExpanderBoxCC>
+            </TabItem>
+
+        </TabControl>
     </StackPanel>
 </Window>
