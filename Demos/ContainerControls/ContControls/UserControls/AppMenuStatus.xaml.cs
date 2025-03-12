@@ -31,14 +31,15 @@ namespace ContControls.UserControls
             switch (mi.Header.ToString())
             {
                 case "_Open":
-                    MessageBox.Show("Open clicked");
+                    MessageBox.Show("Open clicked!");
                     break;
 
                 case "_Save":
-                    MessageBox.Show("Save clicked");
+                    MessageBox.Show("Save clicked!");
                     break;
 
                 case "E_xit":
+                    // ToDo
                     break;
 
                 default:
