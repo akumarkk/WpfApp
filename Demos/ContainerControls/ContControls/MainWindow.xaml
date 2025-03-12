@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:ContControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        xmlns:cc="clr-namespace:ContControls.CustomControls">
-    <StackPanel>
-        <GroupBox Background="Aqua" Height="78" BorderThickness="0" Margin="0 0 0 0" Padding="0 0 0 0">
+        xmlns:cc="clr-namespace:ContControls.UserControls">
+    <!--<StackPanel>-->
+        <!--<GroupBox Background="Aqua" Height="78" BorderThickness="0" Margin="0 0 0 0" Padding="0 0 0 0">
             <GroupBox.Header >
                 <Label Content="Smiley Colors: " Height="38"/>
             </GroupBox.Header>
@@ -43,5 +43,9 @@
         </TabControl>
         <cc:ToolBarUC>
         </cc:ToolBarUC>
-    </StackPanel>
+    </StackPanel>-->
+        <StackPanel>
+            <cc:ScrollBarUC>
+            </cc:ScrollBarUC>
+        </StackPanel>
 </Window>
