@@ -23,13 +23,11 @@
                     <Setter Property="Background" Value="Blue" />
                 </Trigger>
             </Style.Triggers>
-
         </Style>
 
         <DataTemplate x:Key="employeeListItem" DataType="model:Employee">
             <StackPanel Orientation="Horizontal" Background="Orange" >
                 <TextBlock Text="{Binding FirstName}" Margin="0,0,4,0"  Style="{Binding Source={StaticResource textStyle}}"/>
-
                 <TextBlock Text="{Binding LastName}" Margin="0 0 4 0"/>
                 <TextBlock Text="{Binding Id}" />
             </StackPanel>
