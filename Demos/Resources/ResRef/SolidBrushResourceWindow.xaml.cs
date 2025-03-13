@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ResRef.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,7 @@ namespace ResRef
             br.Color = Color.FromArgb(77, 0, 77, 0);
             this.Resources["brush"] = br;
 
+            this.Resources["e1"] = new Employee() { FirstName="Suraj", LastName="Dev", Id="Investor!" };
         }
     }
 }

@@ -4,12 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ResRef"
+        xmlns:sys="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
+        xmlns:model="clr-namespace:ResRef.Models"
         Title="SolidBrushResourceWindow" Height="450" Width="800">
     <Window.Resources>
         <SolidColorBrush x:Key="brush" Color="#77770000" />
+        <sys:String x:Key="welcome">
+            Welcome to Rectangle Window!
+        </sys:String>
+        <model:Employee x:Key="e1" FirstName="Suraj" LastName="Dev" Id="10" />
     </Window.Resources>
     <StackPanel>
         <Rectangle Fill="{DynamicResource brush}" Height="100" Width="100" MouseLeave="Rectangle_LostFocus" MouseEnter="Rectangle_GotFocus" GotFocus="Rectangle_GotFocus" LostFocus="Rectangle_LostFocus"/>
+        <TextBlock Text="{StaticResource welcome}" />
+        <StackPanel DataContext="{DynamicResource e1}">
+            <TextBlock Text="{Binding Path=FirstName}" />
+            <TextBlock Text="{Binding Path=LastName}" />
+            <TextBlock Text="{Binding Path=Id}" />
+        </StackPanel>
     </StackPanel>
 </Window>
