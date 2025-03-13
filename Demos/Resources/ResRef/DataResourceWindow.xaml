@@ -14,9 +14,22 @@
             <model:Employee FirstName="Punith" LastName="Dev" Id="110" />
         </model:Employees>
 
+        <Color x:Key="colorkey" > #565656
+        </Color>
+
+        <Style x:Key="textStyle" TargetType="TextBlock">
+            <Style.Triggers>
+                <Trigger Property="Text" Value="Suraj">
+                    <Setter Property="Background" Value="Blue" />
+                </Trigger>
+            </Style.Triggers>
+
+        </Style>
+
         <DataTemplate x:Key="employeeListItem" DataType="model:Employee">
-            <StackPanel Orientation="Horizontal" Background="Orange">
-                <TextBlock Text="{Binding FirstName}" Margin="0,0,4,0"/>
+            <StackPanel Orientation="Horizontal" Background="Orange" >
+                <TextBlock Text="{Binding FirstName}" Margin="0,0,4,0"  Style="{Binding Source={StaticResource textStyle}}"/>
+
                 <TextBlock Text="{Binding LastName}" Margin="0 0 4 0"/>
                 <TextBlock Text="{Binding Id}" />
             </StackPanel>
