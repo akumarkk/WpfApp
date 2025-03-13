@@ -14,13 +14,13 @@
             <model:Employee FirstName="Punith" LastName="Dev" Id="110" />
         </model:Employees>
 
-        <Color x:Key="colorkey" > #565656
-        </Color>
+        <Color x:Key="colorkey" > #565656</Color>
 
         <Style x:Key="textStyle" TargetType="TextBlock">
             <Style.Triggers>
                 <Trigger Property="Text" Value="Suraj">
                     <Setter Property="Background" Value="Blue" />
+                    <Setter Property="Foreground" Value="White" />
                 </Trigger>
             </Style.Triggers>
         </Style>
