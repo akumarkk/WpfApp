@@ -40,6 +40,9 @@ namespace ResRef
                 case "Next":
                     view.MoveCurrentToNext();
                     break;
+                case "Sort":
+                    view.SortDescriptions.Add(new("FirstName", ListSortDirection.Ascending));
+                    break;
                 case "Get Current Item":
                     Employee em = (Employee)view.CurrentItem;
                     MessageBox.Show(em.ToString());

@@ -25,6 +25,7 @@
         <Button Content="Prev" Click="Button_Click" />
         <Button Content="Next" Click="Button_Click" />
         <Button Content="Get Current Item" Click="Button_Click" />
+        <Button Content="Sort" Click="Button_Click" />
     </StackPanel>
 
 </Window>
