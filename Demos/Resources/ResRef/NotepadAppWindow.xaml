@@ -32,8 +32,6 @@
             <StatusBarItem Content="Words : " />
             <StatusBarItem Content="Lines: " />
         </StatusBar>-->
-        
-
     </DockPanel>
     
 </Window>
